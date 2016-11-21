@@ -10,10 +10,10 @@ var voting = {
 
 app.use(express.static(__dirname + "/public"));
 
-var port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 1338;
+var port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 9876;
 
 var server = app.listen(port, ip, ()=> {
-    console.log(`Server started, listening on port: ${port})
+    //console.log(`Server started, listening on port: ${port}, bound to ${ip}`)
 });
 
 var io = require("socket.io")(server);
