@@ -1,0 +1,23 @@
+{
+  "name": "socketdemo2",
+  "version": "1.0.0",
+  "description": "Open in WebStorm",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lars-m/WebSocketStart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lars-m/WebSocketStart/issues"
+  },
+  "homepage": "https://github.com/lars-m/WebSocketStart#readme"
+}
