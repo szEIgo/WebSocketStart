@@ -24,6 +24,12 @@ app.controller("VoteCtrl", function ($scope, mySocket) {
         mySocket.emit("vote", vote);
 
     }
+    mySocket.on("setup", function(res){
+        $scope.votes.data[0].y = res.results;
+        $scope.config.title = res.title;
+        $scope.yesTxt = res.yesTxt;
+        $scope.noTxt = res.noTxt;
+    })
 
     mySocket.on("update",function(res){
        $scope.votes.data[0].y = res;
